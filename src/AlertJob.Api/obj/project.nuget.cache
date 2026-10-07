@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "29ch1CBdQqY=",
+  "success": true,
+  "projectFilePath": "D:\\Alert_Job\\src\\AlertJob.Api\\AlertJob.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\90331\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.12\\microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "C:\\Users\\90331\\.nuget\\packages\\microsoft.openapi\\2.12.0\\microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
