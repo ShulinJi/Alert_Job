@@ -31,3 +31,4 @@ D:\Alert_Job\src\AlertJob.Api\obj\Debug\net10.0\refint\AlertJob.Api.dll
 D:\Alert_Job\src\AlertJob.Api\obj\Debug\net10.0\AlertJob.Api.pdb
 D:\Alert_Job\src\AlertJob.Api\obj\Debug\net10.0\AlertJob.Api.genruntimeconfig.cache
 D:\Alert_Job\src\AlertJob.Api\obj\Debug\net10.0\ref\AlertJob.Api.dll
+D:\Alert_Job\src\AlertJob.Api\obj\Debug\net10.0\AlertJob.Api.sourcelink.json
