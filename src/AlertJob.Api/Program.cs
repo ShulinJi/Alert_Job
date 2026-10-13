@@ -15,6 +15,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapGet("/health", () => { 
-    return new { status = "ok" };
-});
+    var status = new HealthResponse("ok");
+    return status;
+}).WithName("GetHealth");
+
 app.Run();
+record HealthResponse(string Status);
