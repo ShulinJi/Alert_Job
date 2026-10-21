@@ -1,4 +1,5 @@
 using AlertJob.Api.Models;
+using System.Text.Json;
 namespace AlertJob.Api.Sources.Greenhouse;
 
 public class GreenhouseJobSource : IJobSource
@@ -8,8 +9,18 @@ public class GreenhouseJobSource : IJobSource
     {
         _http = http;
     }
-    public Task<List<JobInfo>> FetchJobsAsync(string companyToken)
+    private static readonly JsonSerializerOptions options = new()
     {
-        throw new NotImplementedException();
+        PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
+    };
+    public async Task<List<JobInfo>> FetchJobsAsync(string companyToken)
+    {
+        var url = $"https://boards-api.greenhouse.io/v1/boards/{companyToken}/jobs";
+        var reponse = await _http.GetFromJsonAsync<GreenhouseJobResponse>(url, options);
+        if (reponse is null)
+        {
+            return [];
+        }
+        return [];
     }
 }
